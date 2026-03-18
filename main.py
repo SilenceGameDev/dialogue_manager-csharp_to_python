@@ -1,11 +1,27 @@
 from flask import Flask, render_template, request
+from jinja2 import TemplateNotFound
 
+from logger import logger
 
 app = Flask(__name__)
 
+INDEX_TEMPLATE_NAME: str = "index.html"
+
+@app.errorhandler(404)
+def page_not_found():
+    return "This page doesn't exist"
+
+def try_load_template(template_name: str) -> str:
+    try:
+        return render_template(template_name)
+    except TemplateNotFound:
+        logger.error(f"Template: {template_name} not found")
+        return page_not_found()
+
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return try_load_template(INDEX_TEMPLATE_NAME)
+
 
 # @app.route('/get_dialogue', methods=['POST'])
 # def process_dialogue():
