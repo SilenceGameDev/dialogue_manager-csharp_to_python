@@ -34,14 +34,14 @@ def home():
 
 @app.route('/dialogue', methods=['GET'])
 def process_dialogue():
-        # If dialogue has started...play the next sentence
+        # if dialogue has started...play the next sentence
         if dialogue_manger.dialogue_started:
             playing_random_dialogue = False
             sentence = dialogue_manger.get_next_sentence()
             logger.debug(msg=f"Playing next sentence")
             return try_load_template(template_name=DIALOGUE_TEMPLATE_NAME, sentence=sentence,
                                      speaker_name=dialogue_manger.speaker_name, random_dialogue=playing_random_dialogue)
-        else: # Else choose a random dialogue to start
+        else: # else choose a random dialogue to start
             playing_random_dialogue = True
             random_dialogue_data = random.choice(dialogue_datas)
             sentence = dialogue_manger.setup_dialogue(random_dialogue_data)
@@ -53,14 +53,13 @@ def process_dialogue():
 @app.route('/start_dialogue', methods=['POST'])
 def start_dialogue():
     dialogue_manger.end_dialogue()  # end any existing dialogue first
-    logger.info(msg="Dialogue ended, starting new dialogue")
 
     dialogue_letter = request.form['dialogue_letter'].capitalize()
     dialogue_index = request.form['dialogue_index']
     try:
         dialogue_data = DialogueData(dialogue_letter, int(dialogue_index), "character_Clammy")
     except ValueError:
-        # User did not enter an index so set index to -1 which will give them a useful error message.
+        # user did not enter an index so set index to -1 which will give them a useful error message.
         dialogue_data = DialogueData(dialogue_letter, -1, "character_Clammy")
 
     sentence = dialogue_manger.setup_dialogue(dialogue_data)

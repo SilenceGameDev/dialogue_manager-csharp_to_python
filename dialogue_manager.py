@@ -45,7 +45,7 @@ class DialogueManager:
 
     # called when user presses the continue button
     def get_next_sentence(self) -> str:
-        # If the next sentence doesn't exist end the dialogue
+        # if the next sentence doesn't exist end the dialogue
         try:
             if self.dialogue_language_key in self.language_data["en"]:
                 self.current_dialogue_index += 1
