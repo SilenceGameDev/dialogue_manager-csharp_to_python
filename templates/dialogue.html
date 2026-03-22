@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" href=" static/assets/css/main.css">
 	</head>
-	<body class="" contenteditable="true">
+	<body>
 
 		<!-- Header -->
 			<section id="header" class="dark">
@@ -30,56 +30,33 @@
 				</header>
 				<div class="content dark style1 featured">
 					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon fa-clock"></span></span>
-									<header>
-										<h3>Gravida</h3>
-									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus.</p>
-								</section>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
-									<header>
-										<h3>Vivamus</h3>
-									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus.</p>
-								</section>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
-									<header>
-										<h3>Accumsan</h3>
-									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus.</p>
-								</section>
-							</div>
-							<div class="col-12">
+						{% if random_dialogue: %}
+						<h4> Playing random dialogue</h4>
+						{% endif%}
+						<h3>Speaker name: {{speaker_name}}</h3>
+						<h2>Dialogue: {{sentence}}</h2>
+					</div>
+					<div class="col-12">
 								<footer>
-									<a href="http://127.0.0.1:5000/#second" class="button scrolly">Gravida tempor lacinia</a>
+									<a href="{{ url_for('process_dialogue') }}" class="button scrolly">Display Next Sentence</a>
 								</footer>
 							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 
 		<!-- Second -->
 			<section id="second" class="main">
-				
+				<section>
+    <form action="/start_dialogue" method="POST">
+        <label for="dialogue_letter">Dialogue Letter:</label>
+        <input type="text" name="dialogue_letter" placeholder="Enter a letter from A-H">
+
+        <label for="dialogue_index">Dialogue Index:</label>
+        <input type="number" name="dialogue_index" placeholder="Enter number from">
+
+        <button type="submit">Get Dialogue</button>
+    </form>
+</section>
 				
 			</section>
 

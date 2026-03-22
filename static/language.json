@@ -1,0 +1,204 @@
+{
+    "en": {
+
+        "wordForm": "Word Form",
+        "mobileCheckText": "If you are playing on a mobile device like an iPad press the button below to.",
+        "enableMobileButtonsText": "Enable Mobile Buttons.",
+        "formsOfNumber": "Forms of a Number",
+        "millionsPlace": "Millions",
+        "startText": "Start",
+        "pictureForm": "Picture",
+        "mentorName": "Clammy",
+
+        "hundredThousandsPlace": "Hundred Thousands",
+        "hundredsPlace": "Hundreds",
+
+        "tenThousandsPlace": "Ten Thousands",
+        "standardForm": "Standard",
+        "thousandsPlace": "Thousands",
+        "tensPlace": "Tens",
+        "optionsText": "Options",
+
+
+        "madeBy": "Made by Trevaughn and Dashaun",
+
+        "expandedForm": "Expanded Form",
+        "onesPlace": "Ones",
+
+        "oneText": "One",
+        "twoText": "Two",
+        "threeText": "Three",
+        "fourText": "Four",
+        "fiveText": "Five",
+        "sixText": "Six",
+        "sevenText": "Seven",
+        "eightText": "Eight",
+        "nineText": "Nine",
+        "tenText": "Ten",
+        "elevenText": "Eleven",
+        "twelveText": "Twelve",
+        "thirteenText": "Thirteen",
+        "fourteenText": "Fourteen",
+        "fifteenText": "Fifteen",
+        "sixteenText": "Sixteen",
+        "seventeenText": "Seventeen",
+        "eighteenText": "Eighteen",
+        "nineteenText": "Nineteen",
+        "twentyText": "Twenty",
+        "thirtyText": "Thirty",
+        "fourtyText": "Forty",
+        "fiftyText": "Fifty",
+        "sixtyText": "Sixty",
+        "seventyText": "Seventy",
+        "eightyText": "Eighty",
+        "ninetyText": "Ninety",
+        "hundredText": "Hundred",
+        "thousandText": "Thousand",
+        "millionText": "Million",
+
+        "nextButtonText": "Next>>",
+
+        "doneText": "Done",
+        "backgroundMusicText": "Background Music",
+        "title": "Math Beach",
+        "resumeText": "Resume",
+        "character_Clammy": "Clammy",
+
+        "areYouSureText": "Are you Sure",
+        "yesText": "Yes",
+        "noText": "No",
+        "resultText": "Result",
+
+
+        "Dialogue_A_Sen_0": "Hi there, you look lost...",
+        "Dialogue_A_Sen_1": "I can help you get back to the parking lot.",
+        "Dialogue_A_Sen_2": "I'm sure you'll find your family there.",
+        "Dialogue_A_Sen_3": "You will need to remember the things you learned about Place Value but don't worry I'll be here to help you along the way.",
+        "Dialogue_A_Sen_4": "Press the arrow keys to move. Press space to jump.",
+
+        "Dialogue_B_Sen_0": "Pay attention to the number 2,734.",
+        "Dialogue_B_Sen_1": "It is equal to 2000 + 700 + 30 + 4.",
+        "Dialogue_B_Sen_2": "2 is in the Thousands place, 7 is in the hundreds place, 3 is in the tens place, and 4 is in the ones place.",
+
+        "Instruction_Dig": "Looks like there is something buried underneath here. Press the z key to start digging, press the Dig button on mobile.",
+
+        "Instruction_Dig_Success": "You found some sea shells buried in the sand. Looks like they are worth something so be sure to collect them.",
+
+        "Dialogue_C_Sen_0": "Being able to compare Large Numbers will help you a lot in your journey. I will show you how!",
+        "Dialogue_C_Sen_1": "Look at these two numbers",
+        "Dialogue_C_Sen_2": "We need to compare each place value. Always start from the left.",
+        "Dialogue_C_Sen_3": "In this example 9 is greater than 7. That means 925 is greater than 786.",
+        "Dialogue_C_Sen_4": "Now lets change the 7 to a nine and compare the two.",
+        "Dialogue_C_Sen_5": "We start from the left. Since digits in the hundreds place are nine what we compare the digits in the tens place next.",
+        "Dialogue_C_Sen_6": "Since 2 is less than 8 we know that 925 is less than 986.",
+
+        "Dialogue_D_Sen_0": "There is a gap ahead that is too wide to cross. We need some sand to fill the hole.",
+
+        "Instruction_D": "The numbers on the bucket represents how much sand is inside it. Place the bucket that has more sand on the correct side of the comparison.",
+        "Hint_D_0": "Pay attention to the comparison operator. The bigger number should be on the left side and the smaller on the right.",
+        "Success_D_0": "Good job. We still need more sand so lets keep going.",
+
+        "Hint_D_1": "Pay attention to the comparison operator. The bigger number should be on the right side and the smaller on the left.",
+        "Success_D_1": "Amazing we have enough sand. I will fill the hole.",
+
+        "Dialogue_E_Sen_0": "When we compose numbers we start by looking at the place. Hundreds, Tens, Ones",
+        "Dialogue_E_Sen_1": "Look at the example above. How many boxes are in the hundreds place",
+        "Dialogue_E_Sen_2": "Thats right 2. Now how many are in the tens place.",
+        "Dialogue_E_Sen_3": "Thats right 4. How many are in the Ones place.",
+        "Dialogue_E_Sen_4": "Yes there are 7. The number 247 is composed of 2 hundreds. 4 Tens and 7 Ones. If you were to count the boxes they'd look like this",
+        "Dialogue_E_Sen_5": "When we decompose numbers we break them apart. Look at the number 328",
+        "Dialogue_E_Sen_6": "It can be broken down into three hundreds.",
+        "Dialogue_E_Sen_7": "2 Tens",
+        "Dialogue_E_Sen_8": "And 8 Ones",
+        "Dialogue_E_Sen_9": "It can also be written as 300 + 20 + 8.",
+
+        "Dialogue_F_Sen_0": "There are so many blocks in our way. I know what we can do. Lets break some of them to clear a path.",
+
+        "Instruction_F_Normal": "You will need block pieces to compose the number above. Jump on the blocks to break them into smaller pieces. Click on bucket when you think you have collected enough.",
+        "Instruction_F_Bucket_Compose": "Look at the number above. Using the pieces you collected Compose the number. Click the pieces in your bucket on the left to select them. When you are done selecting click the Done button. If you want to go back and collect more blocks click the small bucket at the top left.",
+        "Hint_F_0": "Almost, pay close attention to the number above. Try adding or removing numbers until the amount of pieces is equal to the number above.",
+        "Success_F_0": "Amazing you were able to break apart the block and use the pieces to compose a number! Now its time to compose a bigger number.",
+        "Success_F_1": "Wow you are so good at this. I will take the rest of the blocks and build us a path forward.",
+
+        "Dialogue_G_Sen_0": "You will need to learn how to read large numbers in standard and word form.",
+        "Dialogue_G_Sen_1": "Pay attention to the number 479,328. This comma stands for thousand.",
+        "Dialogue_G_Sen_2": "To read this number we can separate it into two parts. Four Hundred Seventy Nine Thousand, Three Hundred Twenty Eight. ",
+        "Dialogue_G_Sen_3": "Now lets try it with a bigger number. This time we add a 2 and we will need another comma. This comma stands for million.",
+        "Dialogue_G_Sen_4": "Now to read this we will say Two Million, Four Hundred Seventy Nine Thousand, Three Hundred Twenty Eight.",
+
+        "Dialogue_H_Sen_0": "Oh no there are some evil crabs attacking.",
+        "Dialogue_H_Sen_1": "Use your shovel to attack them. Press the x key to attack. On iPad press the attack button.",
+
+        "Instruction_H_1": "Press the x key to attack. On iPad press the attack button. Defeat the crab. Run up to it and attack or wait for it to get to you then attack.",
+
+        "Dialogue_HH_Sen_0": "Another wave of crabs are attacking.",
+
+        "Instruction_H_2": "Defeat the remaining crabs.",
+
+        "Dialogue_HHH_Sen_0": "There is only one more. That looks like the boss crab. It is stronger than the rest but it seems to be slower.",
+
+        "Instruction_H_3": "Attack and defeat the boss crab.",
+
+        "Dialogue_HHHH_Sen_0": "You defeated them all, great job! You got a bunch of xp for that too.",
+        "Dialogue_HHHH_Sen_1": "Oh wait all of the xp you got was in word form. My word form to standard form converter is broken.You will have to help convert all of the xp into standard form.",
+        "Dialogue_HHHH_Sen_2": "You will have to help convert all of the xp into standard form. Then I will add it all up and you can gain all the xp!",
+
+        "Instruction_HHHH_Normal": "Look at the number above that is in word form. Choose the number that it is equal to in standard form. Click the Done button after you have made a selection.",
+        "Instruction_HHHH_Fail": "Oh no that was incorrect. You lost that xp but dont worry. Lets continue.",
+        "Instruction_HHHH_Success_1": "Correct. You are good at this!",
+        "Instruction_HHHH_Success_2": "Nice Job. Only one more to go",
+        "Instruction_HHHH_Success_Final": "Amazing you got it right! Give me one moment while I convert all the xp....and Done! Lets keep going.",
+        "Instruction_HHHH_Fail_Final": "You did not get that question right but dont worry. I am sure will be able to get more xp along the way.",
+
+        "XP_Minigame_Q1": "Four Hundred Ninety Two",
+        "XP_Minigame_Q2": "Seventy Six Thousand  Four Hundred Eighteen",
+        "XP_Minigame_Q3": "Three Hundred Fifty Two Thousand Nine Hundred Eighty Seven",
+
+        "Dialogue_I_Sen_0": "We need to make it past this sand castle to move on but it is so tall.",
+        "Dialogue_I_Sen_1": "Wait what is that.",
+
+        "Dialogue_II_Sen_0": "Some turtles are here to help us. Jump on their back to bounce high.",
+
+        "Instruction_I_1": "Jump on the back of one of the turtles to be bounced up.",
+
+        "Dialogue_III_Sen_0": "Woah we are so high in the sky. It is like we are flying. The turtles helped us get to a secret area.",
+        "Dialogue_III_Sen_1": "There are so many sea shells up here. Collect as many as you can.",
+
+        "Instruction_II_1": "Collect as many sea shells as you can while you float down.",
+
+        "Dialogue_K_Sen_0": "This is your last challenge. You're almost home.",
+        "Dialogue_K_Sen_1": "You must use everything you've learned so far to defeat this monster.",
+        "Dialogue_K_Sen_2": "He shoots clams to at you. Attack to destroy the clams.",
+
+        "Instruction_K_Boss_Attacking": "Attack the clams the boss is shooting at you.",
+        "Instruction_K_Collected_Pearls": "Those clams dropped pearls. Look at the number above the pearl. Select the pearls that are worth more.",
+        "Instruction_K_Normal_Question": "Transform the number above into word form. Click on the buttons to select a word starting from left to right. Click done when you are done.",
+
+        "Instruction_K_Fail": "Oh no that was incorrect. Those evil crabs are back. Attack and defeat them to continue.",
+        "Instruction_K_Success": "That is correct! The turtles are back to help us. Jump on their back to bounce up.",
+        "Instruction_K_Bounced_Up": "We made it up above the boss thanks to the turtles. Now run over and jump on the Boss Clam to stun it.",
+        "Instruction_K_Sunned_Boss": "The Boss is stunned! Now is your chance to attack it. Keep attacking until it wakes up.",
+        "Instruction_K_Attacked_Boss": "That was great. I can see it getting weaker but it is not done yet.",
+        "Instruction_K_Boss_Defeated": "You did it!. I see the parking lot up ahead!",
+
+        "Instruction_K_Tutorial_0": "This is the boss menu. Here you must convert the number above into word form. I will show you how.",
+        "Instruction_K_Tutorial_1": "Use these buttons to help you. We will go from left to right. Click the first button.",
+        "Instruction_K_Tutorial_2": "When you click one of those buttons it will bring up a new window where you can select a number or place. Looking at the number above we will need a one so select it.",
+        "Instruction_K_Tutorial_3": "Nice now we have a one, but what place is it? Click on the button next to it.",
+        "Instruction_K_Tutorial_4": "Looking at the number above, the next word we will need is hundred so click the hundred.",
+        "Instruction_K_Tutorial_5": "Good now we have One Hundred in word form but we need some more. Click on the next button.",
+        "Instruction_K_Tutorial_6": "Next we need twenty then three. Click the twenty then click the next button and click the three.",
+        "Instruction_K_Tutorial_7": "Great now since the three is in the thousands place we need the word thousand. Click the next button and click thousand.",
+        "Instruction_K_Tutorial_8": "Amazing, I think you are getting the hang of it. I will fill out the rest this time.",
+        "Instruction_K_Tutorial_9": "Now click the done button and that is it!",
+        "Instruction_K_Tutorial_10": "Time for you to solve the next question on your own.",
+
+        "Instruction_K_Thanks_For_Playing": "Thank you for playing!!",
+
+
+
+        "Dialogue_L_Sen_0": "Thanks For Playing!!",
+
+        "quitText": "Quit"
+    }
+}

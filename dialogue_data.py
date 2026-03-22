@@ -1,2 +1,7 @@
+from dataclasses import dataclass
+
+@dataclass
 class DialogueData:
-    pass
+    dialogue_letter: str
+    dialogue_index: int
+    speaker_name: str
