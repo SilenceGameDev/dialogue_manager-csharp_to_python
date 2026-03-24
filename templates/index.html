@@ -5,399 +5,207 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Tessellate by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Dialogue Manager Python to C# Project</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/assets/css/main.css"/>
 
-		<!-- Header -->
-			<section id="header" class="dark">
-				<header>
-					<h1>Welcome to Tessellate</h1>
-					<p>A free responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-				</header>
-				<footer>
-					<a href="#first" class="button scrolly">Proceed to second phase</a>
-				</footer>
-			</section>
 
-		<!-- First -->
-			<section id="first" class="main">
-				<header>
-					<div class="container">
-						<h2>Tessellate is a free responsive site template</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content dark style1 featured">
-					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon fa-clock"></span></span>
-									<header>
-										<h3>Gravida</h3>
-									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus.</p>
-								</section>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
-									<header>
-										<h3>Vivamus</h3>
-									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus.</p>
-								</section>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
-									<header>
-										<h3>Accumsan</h3>
-									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus.</p>
-								</section>
-							</div>
-							<div class="col-12">
-								<footer>
-									<a href="{{ url_for('process_dialogue') }}" class="button scrolly">Try it yourself</a>
-								</footer>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+</head>
+<body class="is-preload">
 
-		<!-- Second -->
-			<section id="second" class="main">
-				<header>
-					<div class="container">
-						<h2>Euismod sed feugiat lorem tempus magna</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content dark style2">
-					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<section>
-									<h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-									tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-									vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-									augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-									lorem ipsum dolor placerat magna tempus feugiat.</p>
-									<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-									euismod lorem ipsum dolor.</p>
-									<footer>
-										<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
-									</footer>
-								</section>
-							</div>
-							<div class="col-8 col-12-narrow">
-								<div class="row">
-									<div class="col-6"><a href="#" class="image fit"><img src="static/images/pic01.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="static/images/pic02.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="static/images/pic03.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="static/images/pic04.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="static/images/pic05.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="static/images/pic06.jpg" alt="" /></a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<!-- Header -->
+{% include 'header.html' %}
 
-		<!-- Third -->
-			<section id="third" class="main">
-				<header>
-					<div class="container">
-						<h2>Ornare varius lorem ipsum ante lectus</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content dark style3">
-					<div class="container">
-						<span class="image featured"><img src="static/images/pic07.jpg" alt="" /></span>
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<h3>Diam vivamus turpis lorem sodales lectus ornare</h3>
-								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-								augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-								lorem ipsum dolor placerat magna tempus feugiat.</p>
-								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-								euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu eget ornare varius
-								gravida dolore euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu
-								eget ornare et magna.</p>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-								augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-								lorem ipsum dolor placerat magna tempus feugiat.</p>
-								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-								euismod lorem ipsum dolor sit amet consequat eget ornare varius gravida euismod.
-								Gravida dis lorem ipsum dolor placerat magna tempus feugiat magna tempus lorem.</p>
-								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus augue cubilia.</p>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<p>Placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
-								lacinia eget ornare varius gravida. Gravida dis placerat lectus ante vel nunc
-								euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus augue
-								cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-								lorem ipsum dolor placerat magna tempus feugiat. Lectus ante vel nunc euismod
-								est turpis sodales. Diam tempor dui lacinia dolore.</p>
-								<p>Accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
-								dolore euismod lorem ipsum dolor sit amet conseismod lorem ipsum dolor sit amet
-								consequat lorem ipsum consequat feugiat sed tempus euismod feugiat veroeros.</p>
-								<footer>
-									<a href="#fourth" class="button scrolly">Ipsum ornare lorem dolor</a>
-								</footer>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<!-- First -->
+<section id="first" class="main">
+    <header>
+        <div class="container">
+            <h2>Why I made this project</h2>
+            <p>I have been coding c# and making games in unity for 6 years. I have been making educational games
+                for <a href="https://www.legendsoflearning.com/">Legends Of Learning</a> for 5 years.
+                I wanted to make something small so I can get accustomed to the differences between python and c#.</p>
+        </div>
+    </header>
+    <div class="content dark style1 featured">
+        <div class="container">
+            <section>
+                <header>
+                    <h3>
+                        Here is the Dialogue Manager flow in Unity
+                    </h3>
+                    <br>
+                    <h2>
+                        The dialogue manager handles playing the correct dialogue based on the parameters passed in.
+                        DialogueData is used to quickly set up a sequence of dialogue. DialogueActivator can be
+                        an object in the world that will start the dialogue when the player triggers it.
+                    </h2>
+                    <br>
+                    <h1>
+                        Please excuse the placeholder art. This game hasn't been released yet ;)
+                    </h1>
+                </header>
+            </section>
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <img src="{{ url_for('static', filename='images/dialogue_manager_example.png') }}"
+                             alt="dialogue manager" width="250px">
+                        <header>
+                            <h3>Inspector View</h3>
+                        </header>
+                        <p>
+                            There is one DialogueManager object that exists in the world. It handles bringing up the
+                            dialogue widow and playing the correct dialogue.
+                        </p>
+                    </section>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <img src="{{ url_for('static', filename='images/walking_into_dialogue_trigger_gif.gif') }}"
+                             alt="dialogue manager" width="400px">
+                        <header>
+                            <h3>Player Triggering Dialogue</h3>
+                        </header>
+                        <p>Here in the Scene View you can see the player walking into the dialogue trigger (the green
+                            box).</p>
+                    </section>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <img src="{{ url_for('static', filename='images/playing_dialogue_gif.gif') }}"
+                             alt="dialogue manager" width="400px">
+                        <header>
+                            <h3>Going through Dialogue</h3>
+                        </header>
+                        <p>
+                            After the player triggers the dialogue they click the continue button to go on to the next
+                            sentence.
+                            When there are no more sentences, the dialogue window closes.
+                        </p>
+                    </section>
+                </div>
+                <div class="col-12">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<!-- Basic Elements -->
-		<!--
-			<section class="main">
-				<header>
-					<div class="container">
-						<h2>A Whole Lotta Elements</h2>
-						<p>General purpose elements for every general purpose. Or something like that.</p>
-					</div>
-				</header>
-				<div class="content style1 dark">
-					<div class="container">
-						<section>
-							<header>
-								<h3>Paragraph</h3>
-								<p>This is a byline</p>
-							</header>
-							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-							amet risus elit.</p>
-						</section>
-						<section>
-							<header>
-								<h3>Blockquote</h3>
-							</header>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
-							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
-						</section>
-						<section>
-							<header>
-								<h3>Divider</h3>
-							</header>
-							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-							posuere cubilia.</p>
-							<hr />
-							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-							posuere cubilia.</p>
-						</section>
-						<section>
-							<header>
-								<h3>Unordered List</h3>
-							</header>
-							<ul class="default">
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-							</ul>
-						</section>
-						<section>
-							<header>
-								<h3>Ordered List</h3>
-							</header>
-							<ol class="default">
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-							</ol>
-						</section>
-						<section>
-							<header>
-								<h3>Table</h3>
-							</header>
-							<div class="table-wrapper">
-								<table class="default">
-									<thead>
-										<tr>
-											<th>ID</th>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>00001</td>
-											<td>Lorem ipsum dolor</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>00002</td>
-											<td>Sit amet nullam</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>00003</td>
-											<td>Feugiat felis viverra</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>00004</td>
-											<td>Sagittis enim felis</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>00005</td>
-											<td>Nullam sed vestibulum</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="3"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-						<section>
-							<header>
-								<h3>Form</h3>
-							</header>
-							<form method="post" action="#">
-								<div class="row gtr-50">
-									<div class="col-6 col-12-narrow">
-										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
-									</div>
-									<div class="col-6 col-12-narrow">
-										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-									</div>
-									<div class="col-12">
-										<div class="select" tabindex="-1">
-											<select name="department" id="department">
-												<option value="">Choose a department</option>
-												<option value="1">Manufacturing</option>
-												<option value="2">Administration</option>
-												<option value="3">Support</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" class="button" value="Send Message" /></li>
-											<li><input type="reset" class="button alt" value="Clear Form" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-					</div>
-				</div>
-			</section>
-		-->
+<!-- Second -->
+<section id="second" class="main">
+    <header>
+        <div class="container">
+            <a href="{{ url_for('process_dialogue') }}" class="button scrolly">Try It Yourself!</a>
+        </div>
+    </header>
+    <div class="content dark style2">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <h3>Tech Stack</h3>
+                        <p>Python, HTML, Javascript, Flask, Jinja.</p>
+                        <p>Since the user isn't able to add to language.json file I had to cover some more edge cases.</p>
+                        <footer>
+                            <a href="#third" class="button scrolly">Accumsan nisi tempor</a>
+                        </footer>
+                    </section>
+                </div>
+                <div class="col-8 col-12-narrow">
+                    <div class="row">
+                        <div class="col-6"><a href="#" class="image fit"><img src="static/images/pic01.jpg" alt=""/></a>
+                        </div>
+                        <div class="col-6"><a href="#" class="image fit"><img src="static/images/pic02.jpg" alt=""/></a>
+                        </div>
+                        <div class="col-6"><a href="#" class="image fit"><img src="static/images/pic03.jpg" alt=""/></a>
+                        </div>
+                        <div class="col-6"><a href="#" class="image fit"><img src="static/images/pic04.jpg" alt=""/></a>
+                        </div>
+                        <div class="col-6"><a href="#" class="image fit"><img src="static/images/pic05.jpg" alt=""/></a>
+                        </div>
+                        <div class="col-6"><a href="#" class="image fit"><img src="static/images/pic06.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<!-- Fourth -->
-			<section id="fourth" class="main">
-				<header>
-					<div class="container">
-						<h2>Sed feugiat ipsum consequat</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content style4 featured">
-					<div class="container medium">
-						<form method="post" action="#">
-							<div class="row gtr-50">
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
-								<div class="col-12"><textarea name="message" placeholder="Message"></textarea></div>
-								<div class="col-12">
-									<ul class="actions special">
-										<li><input type="submit" class="button" value="Send Message" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
+<!-- Third -->
+<section id="third" class="main">
+    <header>
+        <div class="container">
+            <h2>Ornare varius lorem ipsum ante lectus</h2>
+            <p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor
+                sit amet consequat<br/>
+                feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem
+                ipsum dolor sit amet.</p>
+        </div>
+    </header>
+    <div class="content dark style3">
+        <div class="container">
+            <span class="image featured"><img src="static/images/pic07.jpg" alt=""/></span>
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <h3>Diam vivamus turpis lorem sodales lectus ornare</h3>
+                    <p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+                        tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+                        vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+                        augue cubilia vivamus nisi eu eget ornare varius gravida euismod. Gravida dis
+                        lorem ipsum dolor placerat magna tempus feugiat.</p>
+                    <p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                        accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+                        euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu eget ornare varius
+                        gravida dolore euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu
+                        eget ornare et magna.</p>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+                        tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+                        vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+                        augue cubilia vivamus nisi eu eget ornare varius gravida euismod. Gravida dis
+                        lorem ipsum dolor placerat magna tempus feugiat.</p>
+                    <p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                        accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+                        euismod lorem ipsum dolor sit amet consequat eget ornare varius gravida euismod.
+                        Gravida dis lorem ipsum dolor placerat magna tempus feugiat magna tempus lorem.</p>
+                    <p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                        accumsan vivamus augue cubilia.</p>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <p>Placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
+                        lacinia eget ornare varius gravida. Gravida dis placerat lectus ante vel nunc
+                        euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus augue
+                        cubilia vivamus nisi eu eget ornare varius gravida euismod. Gravida dis
+                        lorem ipsum dolor placerat magna tempus feugiat. Lectus ante vel nunc euismod
+                        est turpis sodales. Diam tempor dui lacinia dolore.</p>
+                    <p>Accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
+                        dolore euismod lorem ipsum dolor sit amet conseismod lorem ipsum dolor sit amet
+                        consequat lorem ipsum consequat feugiat sed tempus euismod feugiat veroeros.</p>
+                    <footer>
+                        <a href="#fourth" class="button scrolly">Ipsum ornare lorem dolor</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				<div class="copyright">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</section>
+<!-- Footer -->
+{% include 'footer.html' %}
 
-		<!-- Scripts -->
-			<script src="static/assets/js/jquery.min.js"></script>
-			<script src="static/assets/js/jquery.scrolly.min.js"></script>
-			<script src="static/assets/js/browser.min.js"></script>
-			<script src="static/assets/js/breakpoints.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<script src="static/assets/js/main.js"></script>
+<!-- Scripts -->
+<script src="static/assets/js/jquery.min.js"></script>
+<script src="static/assets/js/jquery.scrolly.min.js"></script>
+<script src="static/assets/js/browser.min.js"></script>
+<script src="static/assets/js/breakpoints.min.js"></script>
+<script src="static/assets/js/util.js"></script>
+<script src="static/assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>

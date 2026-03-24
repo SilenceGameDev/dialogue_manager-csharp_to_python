@@ -4,20 +4,14 @@
 		<title>Tessellate by HTML5 UP</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<link rel="stylesheet" href=" static/assets/css/main.css">
+
 	</head>
 	<body>
 
 		<!-- Header -->
-			<section id="header" class="dark">
-				<header>
-					<h1>Welcome to Tessellate</h1>
-					<p>A free responsive site template by <a href="http://html5up.net/">HTML5 UP</a></p>
-				</header>
-				<footer>
-					<a href="http://127.0.0.1:5000/#first" class="button scrolly">Proceed to second phase</a>
-				</footer>
-			</section>
+			{% include 'header.html' %}
 
 		<!-- First -->
 			<section id="first" class="main">
@@ -73,18 +67,7 @@
 			</section>
 
 		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="http://127.0.0.1:5000/#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="http://127.0.0.1:5000/#" class="icon brands fa-facebook-f"><span class="label">LinkedIn</span></a></li>
-					<li><a href="http://127.0.0.1:5000/#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				<div class="copyright">
-					<ul class="menu">
-						<li>© Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</section>
+			{% include 'footer.html' %}
 
 		<!-- Scripts -->
 			<script src="./dialogue_files/jquery.min.js.download"></script>
