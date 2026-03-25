@@ -32,7 +32,7 @@ class DialogueManager:
         try:
             self.sentence = self.language_data["en"][self.dialogue_language_key]
         except KeyError:
-            self.sentence = "Sorry that sentence doesn't exit. Enter a different Letter/Index. "
+            self.sentence = "Sorry that sentence doesn't exist. Enter a different Letter/Index. "
             if dialogue_data.dialogue_index == -1:
                 self.sentence += "You did not enter an index. "
             if dialogue_data.dialogue_letter == "":
@@ -47,12 +47,12 @@ class DialogueManager:
     def get_next_sentence(self) -> str:
         # if the next sentence doesn't exist end the dialogue
         try:
-            if self.dialogue_language_key in self.language_data["en"]:
-                self.current_dialogue_index += 1
+            self.sentence = self.language_data["en"][self.dialogue_language_key]
+            self.current_dialogue_index += 1
 
-                self.dialogue_language_key = f"Dialogue_{self.current_dialogue_letter}_Sen_{self.current_dialogue_index}"
-                self.sentence = self.language_data["en"][self.dialogue_language_key]
-                return self.sentence
+            self.dialogue_language_key = f"Dialogue_{self.current_dialogue_letter}_Sen_{self.current_dialogue_index}"
+            self.sentence = self.language_data["en"][self.dialogue_language_key]
+            return self.sentence
         except KeyError:
             self.end_dialogue()
             self.sentence = "Reached the end of this dialogue."

@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)http://127.0.0.1:5000/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Tessellate by HTML5 UP</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-		<link rel="stylesheet" href=" static/assets/css/main.css">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tessellate by HTML5 UP</title>
 
-	</head>
-	<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href=" static/assets/css/main.css">
 
-		<!-- Header -->
-			{% include 'header.html' %}
+</head>
+<body>
 
-		<!-- First -->
-			<section id="first" class="main">
-				<header>
-					<div class="container">
-						<h2>Tessellate is a free responsive site template</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br>
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content dark style1 featured">
-					<div class="container">
-						{% if random_dialogue: %}
-						<h4> Playing random dialogue</h4>
-						{% endif%}
-						<h3>Speaker name: {{speaker_name}}</h3>
-						<h2>Dialogue: {{sentence}}</h2>
-					</div>
-					<div class="col-12">
-								<footer>
-									<a href="{{ url_for('process_dialogue') }}" class="button scrolly">Display Next Sentence</a>
-								</footer>
-							</div>
-				</div>
-			</section>
+<!-- Header -->
+{% include 'header.html' %}
 
-		<!-- Second -->
-			<section id="second" class="main">
-				<section>
-    <form action="/start_dialogue" method="POST">
-        <label for="dialogue_letter">Dialogue Letter:</label>
-        <input type="text" name="dialogue_letter" placeholder="Enter a letter from A-H">
-
-        <label for="dialogue_index">Dialogue Index:</label>
-        <input type="number" name="dialogue_index" placeholder="Enter number from">
-
-        <button type="submit">Get Dialogue</button>
-    </form>
+<!-- First -->
+<section id="first" class="main">
+    <header>
+        <div class="container">
+            <h2>How it works</h2>
+            <p>Enter a letter from A-H and an Index below. Click the "Get Dialogue" button to return the dialogue
+                at the selected index, if it exists. The page will reload to display the correct dialogue. All indexes
+                start at 0. Plays a random dialogue if there isn't one active already.</p>
+            <p>The dialogue was separated by letters to match the section they were a part of. The index makes it easy
+                to increment to the next sentence in the dialogue. It also makes testing easier.</p>
+        </div>
+    </header>
+    <div class="content dark style1 featured">
+        <div class="container">
+            {% if random_dialogue: %}
+            <h4> Playing random dialogue</h4>
+            {% endif%}
+            <h3>Speaker name: {{speaker_name}}</h3>
+            <h2>Dialogue: {{sentence}}</h2>
+        </div>
+        <div class="col-12">
+            <footer>
+                <a href="{{ url_for('process_dialogue') }}" class="button scrolly">Display Next Sentence</a>
+            </footer>
+        </div>
+    </div>
 </section>
-				
-			</section>
 
-		<!-- Third -->
-			<section id="third" class="main">
-				
-				
-			</section>
+<!-- Second -->
+<section id="second" class="main">
+    <div class="container">
+        <section>
+            <form action="/start_dialogue" method="POST">
+                <div>
+                    <label for="dialogue_letter">Dialogue Letter:</label>
+                    <input type="text" name="dialogue_letter" placeholder="Enter a letter from A-H">
 
-		<!-- Fourth -->
-			<section id="fourth" class="main">
-				
-				
-			</section>
+                    <label for="dialogue_index">Dialogue Index:</label>
+                    <input type="number" name="dialogue_index" placeholder="Enter number from">
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Get Dialogue</button>
+                </div>
+            </form>
+        </section>
+    </div>
 
-		<!-- Footer -->
-			{% include 'footer.html' %}
+</section>
 
-		<!-- Scripts -->
-			<script src="./dialogue_files/jquery.min.js.download"></script>
-			<script src="./dialogue_files/jquery.scrolly.min.js.download"></script>
-			<script src="./dialogue_files/browser.min.js.download"></script>
-			<script src="./dialogue_files/breakpoints.min.js.download"></script>
-			<script src="./dialogue_files/util.js.download"></script>
-			<script src="./dialogue_files/main.js.download"></script>
+<!-- Third -->
+<section id="third" class="main">
 
-	
-</body></html>
+
+</section>
+
+<!-- Fourth -->
+<section id="fourth" class="main">
+
+
+</section>
+
+<!-- Footer -->
+{% include 'footer.html' %}
+
+<!-- Scripts -->
+<script src="./dialogue_files/jquery.min.js.download"></script>
+<script src="./dialogue_files/jquery.scrolly.min.js.download"></script>
+<script src="./dialogue_files/browser.min.js.download"></script>
+<script src="./dialogue_files/breakpoints.min.js.download"></script>
+<script src="./dialogue_files/util.js.download"></script>
+<script src="./dialogue_files/main.js.download"></script>
+
+
+</body>
+</html>
