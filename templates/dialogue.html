@@ -28,7 +28,8 @@
                 to increment to the next sentence in the dialogue. It also makes testing easier.</p>
         </div>
     </header>
-    <div class="content dark style1 featured">
+
+    <div class="content dark style1 featured" id="dialogue">
         <div class="container">
             {% if random_dialogue: %}
             <h4> Playing random dialogue</h4>
@@ -42,6 +43,7 @@
             </footer>
         </div>
     </div>
+
 </section>
 
 <!-- Second -->
@@ -88,7 +90,11 @@
 <script src="./dialogue_files/breakpoints.min.js.download"></script>
 <script src="./dialogue_files/util.js.download"></script>
 <script src="./dialogue_files/main.js.download"></script>
-
+{% if not random_dialogue %}
+<script>
+    document.getElementById('dialogue').scrollIntoView({ behavior: 'smooth' });
+</script>
+{% endif %}
 
 </body>
 </html>

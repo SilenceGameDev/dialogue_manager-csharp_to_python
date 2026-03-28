@@ -53,7 +53,7 @@ def process_dialogue():
 @app.route('/start_dialogue', methods=['POST'])
 def start_dialogue():
     dialogue_manger.end_dialogue()  # end any existing dialogue first
-
+    playing_random_dialogue = False
     dialogue_letter = request.form['dialogue_letter'].capitalize()
     dialogue_index = request.form['dialogue_index']
     try:
@@ -65,7 +65,8 @@ def start_dialogue():
     sentence = dialogue_manger.setup_dialogue(dialogue_data)
     logger.info(msg=f"Loading dialogue from user: {sentence}")
     dialogue_manger.start_dialogue()
-    return try_load_template(template_name=DIALOGUE_TEMPLATE_NAME, sentence=sentence, speaker_name=dialogue_manger.speaker_name)
+    return try_load_template(template_name=DIALOGUE_TEMPLATE_NAME, sentence=sentence, speaker_name=dialogue_manger.speaker_name,
+                             random_dialogue=playing_random_dialogue)
 
 
 if __name__ == '__main__':
